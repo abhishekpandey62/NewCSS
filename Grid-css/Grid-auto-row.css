@@ -1,0 +1,23 @@
+.container{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+       grid-auto-rows:minmax(100px,auto);
+ grid-auto-rows: auto;   /*Adjust minumim and maximum a/c to your container space*/    
+ grid-auto-rows: 100px;  /*height of row 100px at maximum*/
+ grid-auto-rows: min-content;   /*largest minimum content contribution of the grid 
+ items occupying the grid track*/
+ grid-auto-rows: max-content; /*largest maximum content contribution of the grid 
+ items occupying the grid track*/
+ grid-auto-rows: minmax(min, max);
+}
+
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+  
+
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 3px solid black;
+    display: grid;                                                                    
+    grid-template-columns: 200px 200px 210px ;                                           
+    grid-template-rows: 90px 90px 90px 90px;                                            
+    grid-template-columns: 1fr 1fr 1fr; /* same think for row*/                          
+    grid-template-columns: 100px repeat(2, 1fr); /* same think for row*/                  
+    grid-template-columns: repeat(3, 1fr);                                               
+    grid-template-rows: repeat(4, 1fr);                                                 
+    gap: 15px;  /* gap between rows and columns .....Aap inspact karke dekh skte ho*/  
+}
+.box{
+    background-color: aqua;     
+    border: 3px solid black;
+    
+    
+}
+
+#box1{
+    grid-column-start: 1; /*Esme column ko bara krte hai start 1 se kiye hai or end 3 pr kiye hai*/  
+    /*width ko fix nhi karna hai box ka*/  
+    grid-column-end: 3;
+   
+
+}
+#box3{
+    grid-row-start: 2;  /*Esme row ko bara krte hai start 2 se kiye hai or end 4 pr kiye hai*/  
+    /*height ko fix nhi karna hai box ka*/
+    grid-row-end: 4;
+
+}

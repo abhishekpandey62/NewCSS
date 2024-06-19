@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --dark--red:hsl(249, 71%, 35%); /*global variabler*/
+}
+/*:root{
+    --dark--red:hsl(249, 71%, 35%);
+
+}*/
+
+
+.container
+{
+    border: 1px solid brown;
+    background-color: green;
+    height: 300px;
+    width: 300px;
+   background-color: var(--dark--red);
+
+}
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    color:var(--dark--red);
+}

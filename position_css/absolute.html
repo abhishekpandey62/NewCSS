@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+         /*.wapper{  .............Static parent block with respect to browser/document body
+            
+            height: 500px;
+            width: 500px;
+            background-color: yellow;
+            margin: 100px;
+        }*/
+        .wapper{  /*......Non static parent block whit respect to parent block */
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background-color: yellow;
+            margin: 100px;
+        }
+       
+        
+        #box3{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wapper">
+  <div id="box1">ABCD</div>
+  <div id="box2">EFGH</div>
+  <div id="box3">IJKL</div>
+  <div id="box4">MNOP</div>  
+</div>
+</body>
+</html>

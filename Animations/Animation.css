@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px;
+    width: 100%;
+    background-color: green;
+    border: 3px solid red;
+  
+}
+
+.box{
+    height: 100%;
+    width: 150px;
+    border: 2px solid orange;
+    background-color: aqua;
+    animation-name: Abhishek;  /*animation name*/
+    animation-duration: 5s;
+    /*animation-iteration-count: 3;*/  /*3 baar animation hoga */
+    animation-iteration-count: infinite;  /*infinite time tak animation hote rahe ga*/
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-direction: alternate;    
+    animation-fill-mode: backwards;
+}
+
+/*@keyframes Abhishek{
+    from {
+        width: 150px;
+    }
+    to{
+        width: 100%;
+    }
+}*/
+
+@keyframes Abhishek{
+    0%{
+        width: 150px;
+        background-color: aqua;
+    }
+    30%{
+        width: 30%;
+        background-color: red;
+    }
+
+    50%{
+        width: 50%;
+        background-color: black;
+    }
+    100%{
+        width: 100%;
+        background-color: aliceblue;
+    }
+}

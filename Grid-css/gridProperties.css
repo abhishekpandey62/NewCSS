@@ -1,0 +1,47 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2,100px);
+
+    grid-gap: 10px;
+      /*All properties are same as flext amd work also same*/
+
+      /*justify work along main axis it means horizontal  */
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    /*align work along vertical it means that cross axis*/
+    align-items: start; /* all box shift to start the row*/
+    align-items: end;    /* all box shift to end the row*/
+    align-items: stretch;  /*jb hum box ka size fixe nhi karte hai to bydefault 
+    containtent ke row and column ke size ke equal le leta hai ...vaise hi stretch bhi bydefault 
+    property hai */
+    
+    align-content: space-between;
+    align-content: space-around;
+
+}
+.box
+{
+    border: 1px solid red;
+    background-color: aqua;
+
+}
+
+#box1{
+    justify-self: start;  /*horizontal axis ke andar box1 tha ve starting me shift ho gya jitna content hai vaha tk*/
+    justify-self: end;  /*horizontal axis ke andar box1 tha ve end me shift ho gya jitna content hai vaha tk*/
+    justify-self: center;/*horizontal axis ke andar box1 tha ve center me shift ho gya jitna content hai vaha tk*/
+
+    align-self: center; /* virtical axis ke center pe shift ho gya */
+
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+    perspective: 10px;  /*3D game ON in this container*/
+
+}
+.container{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;  /*The CSS transform-style property determines whether child elements
+     of a 3D element should be 3D or flat. The value preserve-3d positions the children of the element in 3D space, making them appear 3D.*/
+     z-index: -1;
+  
+   
+
+
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+   
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /* jab z-index ka value -1 hota hai tb background and foreground both 
+    image behind the other content which is present in parent */
+    object-fit: cover;  /*The CSS object-fit property is used to specify how an <img> or <video> should be 
+    resized to fit its container.    
+    size mera container ka jitna bhi hoga usme mera image ya photo cover ho jaae ga chahe chhota ho ya bara ho container ka size*/
+   
+
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+    
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding:5rem 0;
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding:0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+   
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight:600;
+    
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+
+.bg2
+{
+    background-image: url(sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+}
